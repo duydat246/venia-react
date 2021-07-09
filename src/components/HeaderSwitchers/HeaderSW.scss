@@ -1,0 +1,48 @@
+.header-switchersContainer-5ez {
+    display: block;
+    width: 100%;
+    background-color: rgb(244, 245, 245);
+}
+
+.header-switchers-lz0 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: flex-end;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 11;
+}
+
+.storeSwitcher-root-32o {
+    align-items: center;
+    display: grid;
+    justify-items: end;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.currencySwitcher-root-3kr:last-child:not(:only-child) {
+    padding-left: 0;
+    grid-auto-flow: column;
+}
+
+.currencySwitcher-root-3kr:last-child:not(:only-child)::before {
+    border-left: 1px solid rgb(223, 225, 226);
+    content: "";
+    height: 1rem;
+    width: 1rem;
+}
+.currencySwitcher-root-3kr {
+    align-items: center;
+    display: grid;
+    justify-items: end;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0.5rem 1rem;
+    position: relative;
+}

@@ -1,0 +1,112 @@
+.footer-root-39z {
+    border-top: 2px solid rgb(244, 245, 245);
+    color: rgb(84, 93, 99);
+    display: grid;
+    font-size: 0.875rem;
+    grid-template-areas: "links" "brand";
+    grid-template-columns: 100%;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 15rem;
+    padding-top: 4rem;
+    row-gap: 4rem;
+    width: 100%;
+}
+.footer-links-3az {
+    display: grid;
+    gap: 2rem;
+    grid-area: links;
+    grid-auto-columns: 12rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1.5fr) 3fr;
+    padding: 0 2rem;
+}
+
+.footer-linkGroup-235 {
+    align-content: start;
+    display: grid;
+    gap: 1em;
+}
+
+.footer-linkItem-20r:first-child {
+    color: rgb(23, 32, 38);
+    font-weight: 600;
+}
+
+.footer-callout-3br {
+    font-size: 0.875rem;
+    justify-self: center;
+    line-height: 1.5;
+    max-width: 16rem;
+    min-width: 12rem;
+}
+
+.footer-calloutHeading-30h {
+    color: rgb(23, 32, 38);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.footer-calloutBody-2Bc {
+    margin: 1rem 0;
+}
+
+.footer-socialLinks-5tb {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+
+.footer-branding-3vc {
+    align-items: center;
+    border-top: 2px solid rgb(244, 245, 245);
+    display: grid;
+    grid-area: brand;
+    grid-auto-flow: column;
+    grid-template-areas: "a b c";
+    grid-template-columns: minmax(200px, 1fr) auto minmax(200px, 1fr);
+    height: 4rem;
+    justify-self: center;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.footer-logo-15z {
+    grid-area: a;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.image-container-589 {
+    position: relative;
+}
+
+.image-loaded-SKT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+}
+
+.footer-copyright-35h {
+    grid-area: b;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.footer-legal-345 {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-area: c;
+    grid-auto-flow: column;
+    justify-content: end;
+}
