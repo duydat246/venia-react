@@ -5,10 +5,11 @@ import './Headers.scss';
 
 function HeaderSecondary(props) {
 
-    const initialForm = false;
+    const initialForm = Boolean;
     const [showForm, setShowForm] = useState(initialForm);
     useEffect(() => {
         document.addEventListener("mousedown", (event) => {
+            event.preventDefault()
             // if (!formRef.current.contains(event.target)) {
             //     setShowForm(false);
             // }
@@ -35,7 +36,7 @@ function HeaderSecondary(props) {
             </button>
 
             <div className='accountTrigger-root-1wH'>
-                <button className='clickable-root-1G6 accountTrigger-trigger-3YU' onClick={() => setShowForm(!initialForm)}>
+                <button className='clickable-root-1G6 accountTrigger-trigger-3YU' onClick={() => setShowForm(!initialForm ? false : true)}>
                     <span className='accountChip-root-3cE'>
                         <span className='icon-root-3D0'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon-icon-3jC"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
