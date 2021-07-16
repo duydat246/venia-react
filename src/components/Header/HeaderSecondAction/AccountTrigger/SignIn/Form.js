@@ -3,6 +3,7 @@ import FormProvider from '../../../../../Contexts/FormContext/FormContext';
 
 
 function Form(props) {
+    const { value, handleValueChange } = props;
     return (
         <FormProvider>
             <form className="signIn-form">
@@ -10,7 +11,7 @@ function Form(props) {
                     <label className="field-label">Email address</label>
                     <span className="fieldIcons-root">
                         <span className="fieldIcons-input">
-                            <input autoComplete="email" className="textInput-input field-input" id="9ff2a742-d26d-4aaf-a144-d5aefb668481" name="email" defaultValue />
+                            <input autoComplete="email" className="textInput-input field-input" id="9ff2a742-d26d-4aaf-a144-d5aefb668481" name="email" value={value} onChange={handleValueChange} />
                         </span>
                         <span className="fieldIcons-before" />
                         <span className="fieldIcons-after" />
@@ -21,7 +22,7 @@ function Form(props) {
                     <label className="field-label">Password</label>
                     <span className="fieldIcons-root" style={{ iconsbefore: 0, iconsafter: 1 }}>
                         <span className="fieldIcons-input">
-                            <input type="password" autoComplete="current-password" className="textInput-input field-input" id="2287ddc2-483f-4f77-91be-9dafa577e80c" name="password" defaultValue />
+                            <input type="password" autoComplete="current-password" className="textInput-input field-input" id="2287ddc2-483f-4f77-91be-9dafa577e80c" name="password" value={value} onChange={handleValueChange} />
                         </span>
                         <span className="fieldIcons-before" />
                         <span className="fieldIcons-after">

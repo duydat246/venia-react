@@ -7,6 +7,13 @@ function AccountTrigger(initialIsVisible) {
         setOpen(!open);
     };
 
+    const [value, setValue] = useState('');
+
+    const handleValueChange = (e) => {
+        console.log(e.target.value);
+        setValue(e.target.value);
+    }
+
     // const [isComponentVisible, setIsComponentVisible] = useState(
     //     initialIsVisible
     // );
@@ -31,7 +38,7 @@ function AccountTrigger(initialIsVisible) {
             <div id="accountTrigger-root" className={open ? "accountTrigger-root_open accountTrigger-root" : "accountTrigger-root"} onClick={() => toggle()}>
                 <AccountChip />
             </div>
-            <SignIn open={open} />
+            <SignIn open={open} value={value} handleValueChange={handleValueChange} />
         </>
     );
 }

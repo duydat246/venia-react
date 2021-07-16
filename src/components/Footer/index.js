@@ -4,7 +4,6 @@ import logo from '../../assets/VeniaLogo.svg';
 
 
 function Footer(props) {
-
     return (
         <div className="footer-root-39z">
             <div className="footer-links-3az">
