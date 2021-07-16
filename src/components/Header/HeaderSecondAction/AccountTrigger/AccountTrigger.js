@@ -4,13 +4,6 @@ import AccountChip from './AccountChip/AcountChip';
 import SignIn from './SignIn/SignIn';
 function AccountTrigger(initialIsVisible) {
 
-    // const [open, setOpen] = useState(false);
-    // const toggle = () => {
-    //     setOpen(!open);
-    // };
-
-    // window.setOpen = setOpen;
-
     const { open, handleSignInClick } = useContext(GlobalContext)
 
     const [value, setValue] = useState('');

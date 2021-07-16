@@ -1,11 +1,11 @@
 import React from 'react';
-import FormProvider from '../../../../../Contexts/FormContext/FormContext';
 
 
 function Form(props) {
     const { value, handleValueChange } = props;
     return (
-        <FormProvider>
+        <>
+            <h2 className="signIn-title">Sign-in to Your Account</h2>
             <form className="signIn-form">
                 <div className="field-root">
                     <label className="field-label">Email address</label>
@@ -54,7 +54,7 @@ function Form(props) {
                     </button>
                 </div>
             </form>
-        </FormProvider>
+        </>
     );
 }
 
