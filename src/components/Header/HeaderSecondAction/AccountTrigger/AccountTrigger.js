@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import AccountChip from './AccountChip/AcountChip';
 import SignIn from './SignIn/SignIn';
 function AccountTrigger(initialIsVisible) {
@@ -8,30 +8,10 @@ function AccountTrigger(initialIsVisible) {
     };
 
     const [value, setValue] = useState('');
-
     const handleValueChange = (e) => {
         console.log(e.target.value);
         setValue(e.target.value);
     }
-
-    // const [isComponentVisible, setIsComponentVisible] = useState(
-    //     initialIsVisible
-    // );
-
-    // useEffect(() => {
-    //     document.addEventListener("click", handleClickOutside, true);
-    //     return () => {
-    //         document.removeEventListener("click", handleClickOutside, true);
-    //     };
-    // });
-
-    // const ref = useRef(null)
-
-    // const handleClickOutside = event => {
-    //     if (ref.current && !ref.current.contains(event.target)) {
-    //         setIsComponentVisible(false);
-    //     }
-    // };
 
     return (
         <>

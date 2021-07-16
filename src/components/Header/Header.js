@@ -2,10 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CurrencySwitcher from './CurrencySwitcher/CurrencySwitcher';
 import './Header.scss';
-import AccountTrigger from './HeaderSecondAction/AccountTrigger/AccountTrigger';
-import CartTrigger from './HeaderSecondAction/CartTrigger/CartTrigger';
 import HeaderSecondary from './HeaderSecondAction/HeaderSecondary';
-import Search from './HeaderSecondAction/Search/Search';
 import Logo from './Logo/Logo';
 import MegaMenu from './Nav/MegaMenu';
 import NavigationTrigger from './NavigationTrigger/NavigationTrigger';
@@ -14,7 +11,7 @@ Header.propTypes = {
 
 };
 
-function Header(props) {
+function Header() {
     return (
         <>
             <div className="header-switcherContainer">

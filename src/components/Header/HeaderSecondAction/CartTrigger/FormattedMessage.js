@@ -1,9 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-FormattedMessage.propTypes = {
-
-};
 
 function FormattedMessage(props) {
     const { open } = props;

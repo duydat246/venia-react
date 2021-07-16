@@ -10,7 +10,6 @@ function MegaMenu(props) {
             {navs.map((nav) => (
                 <MegaMenuItem key={nav.id} name={nav.name} children={nav.children} />
             ))}
-            {/* <SubMenu /> */}
         </nav>
     );
 }

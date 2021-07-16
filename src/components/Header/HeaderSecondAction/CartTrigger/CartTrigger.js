@@ -6,6 +6,7 @@ import './CartTrigger.scss';
 function CartTrigger(props) {
     const [open, setOpen] = useState(false);
     const toggle = () => setOpen(!open);
+
     return (
         <>
             <div className={open ? "cartTrigger-triggerContainer_open cartTrigger-triggerContainer" : "cartTrigger-triggerContainer"} onClick={() => toggle()}>
