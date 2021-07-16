@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './App.scss';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import Header from './components/Header/Header';
 import HeaderProvider from './Contexts/HeaderContext/HeaderContext';
 // import Headers from './components/Headers';
@@ -10,14 +10,14 @@ import HeaderProvider from './Contexts/HeaderContext/HeaderContext';
 
 function App() {
   return (
-    <div className="app">
+    <main className="main-root">
       <HeaderProvider>
         {/* <HeaderSwitchers />
       <Headers /> */}
         <Header />
-        {/* <Footer /> */}
+        <Footer />
       </HeaderProvider>
-    </div>
+    </main>
   );
 }
 

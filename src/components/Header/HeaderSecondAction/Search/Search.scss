@@ -1,0 +1,24 @@
+.searchTrigger-root {
+    transition-property: color;
+    transition-duration: 224ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 641px) {
+    .searchTrigger-root {
+        width: auto;
+    }
+}
+
+.searchTrigger-label {
+    display: none;
+}
+
+@media (min-width: 641px) {
+    .searchTrigger-label {
+        display: initial;
+        margin-inline-start: 0.25rem;
+    }
+}

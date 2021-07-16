@@ -12,6 +12,13 @@ html {
     font-size: 100%;
 }
 
+.main-root {
+    background-color: rgb(255, 255, 255);
+    color: rgb(23, 32, 38);
+    position: relative;
+    z-index: 1;
+}
+
 h1,
 h2,
 h3,
@@ -41,4 +48,19 @@ ul {
 }
 p {
     margin: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.clickable-root {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    pointer-events: auto;
+    text-align: center;
 }

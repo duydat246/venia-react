@@ -1,0 +1,22 @@
+.header-secondaryActions {
+    grid-area: secondary;
+    width: max-content;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+    align-items: center;
+    justify-self: end;
+}
+
+@media (min-width: 641px) {
+    .header-secondaryActions {
+        column-gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-secondaryActions {
+        grid-column: 4/5;
+        grid-row: 1/1;
+    }
+}

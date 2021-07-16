@@ -7,6 +7,7 @@ function HeaderSecondary(props) {
 
     const initialForm = Boolean;
     const [showForm, setShowForm] = useState(initialForm);
+
     useEffect(() => {
         document.addEventListener("mousedown", (event) => {
             event.preventDefault()

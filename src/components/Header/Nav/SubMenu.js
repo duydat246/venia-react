@@ -1,20 +1,24 @@
-import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import { HeaderContext } from '../../../Contexts/HeaderContext/HeaderContext';
+import React from 'react';
 
 function SubMenu(props) {
-    const { subItems } = useContext(HeaderContext);
+    const { children } = props;
     return (
-        <div className='subMenu-subMenu-57Hb'>
-            {subItems.map(subItem => (
-                <div className='subMenu-subMenuItems-1Gl' style={{ minWidth: '473px' }} key={subItem.id}>
-                    <div className='subMenuColumn-subMenuColumn-2MP'>
-                        <a className='subMenuColumn-link-3_5' href='#'>
-                            <h3 className='subMenuColumn-heading-3zf'>{subItem.name}</h3>
+        <div className="subMenu-subMenu">
+            <div
+                className="subMenu-subMenuItems"
+                style={{ minWidth: "473px" }}
+            >
+                {children.map((chil) =>
+                (
+
+                    <div className="subMenuColumn-subMenuColumn" key={chil}>
+                        <a className='subMenuColumn-link' href="#">
+                            <h3 className='subMenuColumn-heading'>{chil}</h3>
                         </a>
                     </div>
-                </div>
-            ))}
+                ))
+                }
+            </div>
         </div>
     );
 }

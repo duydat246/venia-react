@@ -1,0 +1,23 @@
+.accountTrigger-root {
+    align-items: center;
+    display: grid;
+    height: calc(5rem - 8px);
+}
+
+.accountTrigger-root_open {
+    box-shadow: 0 4px rgb(31, 57, 255);
+}
+
+.accountTrigger-trigger {
+    height: 3rem;
+    min-width: 6rem;
+    z-index: 1;
+}
+
+.accountChip-root {
+    align-items: center;
+    column-gap: 0.5rem;
+    display: grid;
+    grid-auto-columns: auto 1fr;
+    grid-auto-flow: column;
+}

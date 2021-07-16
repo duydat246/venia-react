@@ -1,0 +1,15 @@
+.storeSwitcher-root {
+    align-items: center;
+    display: grid;
+    justify-items: end;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.storeSwitchers-trigger {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
