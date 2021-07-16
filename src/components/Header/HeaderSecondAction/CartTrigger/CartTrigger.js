@@ -8,7 +8,7 @@ function CartTrigger(props) {
     const toggle = () => setOpen(!open);
     return (
         <>
-            <div className="cartTrigger-triggerContainer_open cartTrigger-triggerContainer" onClick={() => toggle()}>
+            <div className={open ? "cartTrigger-triggerContainer_open cartTrigger-triggerContainer" : "cartTrigger-triggerContainer"} onClick={() => toggle()}>
                 <button aria-label="Toggle mini cart. You have 0 items in your cart." className="cartTrigger-trigger clickable-root">
                     <Icon />
                 </button>
@@ -16,7 +16,7 @@ function CartTrigger(props) {
             <button aria-label="Toggle mini cart. You have 0 items in your cart." className="cartTrigger-link cartTrigger-trigger clickable-root">
                 <Icon />
             </button>
-            {open ? <FormattedMessage /> : null}
+            <FormattedMessage open={open} />
         </>
     );
 }

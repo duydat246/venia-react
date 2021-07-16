@@ -24,6 +24,12 @@
     min-height: 5rem;
 }
 
+.megaMenuItem-megaMenuItem:hover .megaMenuItem-megaMenuLink,
+.megaMenuItem-megaMenuItem:focus .megaMenuItem-megaMenuLink {
+    text-decoration: underline;
+    color: currentColor;
+}
+
 .subMenu-subMenu {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px rgb(244, 245, 245);
@@ -69,6 +75,13 @@
 
 .subMenuColumn-link {
     white-space: nowrap;
+}
+
+.subMenuColumn-link:hover,
+.subMenuColumn-link:focus,
+.subMenuColumn-linkActive {
+    text-decoration: underline;
+    color: currentColor;
 }
 
 .subMenuColumn-heading {

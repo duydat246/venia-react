@@ -6,9 +6,10 @@ FormattedMessage.propTypes = {
 };
 
 function FormattedMessage(props) {
+    const { open } = props;
     return (
-        <aside className="miniCart-root_open miniCart-root">
-            <div className="miniCart-contents_open miniCart-contents">
+        <aside className={open ? "miniCart-root_open miniCart-root" : "miniCart-root"}>
+            <div className={open ? "miniCart-contents_open miniCart-contents" : "miniCart-contents"}>
                 <div className="miniCart-emptyCart">
                     <div className="miniCart-emptyMessage">There are no items in your cart.</div>
                 </div>
