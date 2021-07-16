@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Footer.scss';
 import logo from '../../assets/VeniaLogo.svg';
-
+import { GlobalContext } from '../../Contexts/GlobalContext/GlobalContext';
+console.log(window.setOpen)
 
 function Footer(props) {
+    const { handleSignInClick } = useContext(GlobalContext);
     return (
         <div className="footer-root-39z">
             <div className="footer-links-3az">
                 <ul className="footer-linkGroup-235">
                     <li className="footer-linkItem-20r">Account</li>
-                    <li className="footer-linkItem-20r"><button>Sign In</button></li>
+                    <li className="footer-linkItem-20r"><button onClick={() => handleSignInClick()}>Sign In</button></li>
                     <li className="footer-linkItem-20r">Register</li>
                     <li className="footer-linkItem-20r">Oder Status</li>
                     <li className="footer-linkItem-20r">Returns</li>

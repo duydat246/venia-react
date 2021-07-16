@@ -13,7 +13,7 @@ Header.propTypes = {
 
 function Header() {
     return (
-        <>
+        <div>
             <div className="header-switcherContainer">
                 <div className="header-switchers">
                     <StoreSwitcher />
@@ -30,7 +30,7 @@ function Header() {
                     </div>
                 </Router>
             </header>
-        </>
+        </div>
     );
 }
 
