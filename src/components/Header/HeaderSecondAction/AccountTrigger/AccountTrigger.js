@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../../../../Contexts/GlobalContext/GlobalContext';
 import AccountChip from './AccountChip/AcountChip';
 import SignIn from './SignIn/SignIn';
-function AccountTrigger(initialIsVisible) {
+function AccountTrigger() {
 
     const { open, handleSignInClick } = useContext(GlobalContext)
 

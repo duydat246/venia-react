@@ -51,6 +51,7 @@ function HeaderProvider(props) {
     const [navs, setNavs] = useState(navItems);
 
     const children = navs.children;
+
     return (
         <HeaderContext.Provider value={{ navs, children }} >
             {props.children}
